@@ -8,3 +8,5 @@ reader = csv.DictReader(f, delimiter=',')
 
 for row in reader:
     print(row["rat"])
+
+
