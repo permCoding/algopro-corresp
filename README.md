@@ -3,7 +3,7 @@
 
 БЕЛЯКОВ Андрей Юрьевич  
 
-[дистант тут](https://bbb6.psaa.ru/b/k36-urc-ylf-cdg)  
+[дистант тут](https://bbb6.psaa.ru/b/j46-s4j-srl-tn2)  
 
 ---  
 
