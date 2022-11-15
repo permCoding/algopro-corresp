@@ -12,5 +12,5 @@ def get_data(file_name):
 
 file_name = "./csv/students.csv"
 students = get_data(file_name)
-for stud in sorted(students, key=lambda x: x["name"]):  # сортируем словари по ключу
+for stud in sorted(students, key=lambda x: int(x["age"]), reverse=True):  # сортируем словари по ключу
     print(stud)

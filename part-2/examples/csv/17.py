@@ -9,8 +9,8 @@ def get_data(file_name):
 
 
 def write_to_file(file_name, dicts, fields):
-    with open(file_name, mode="w", encoding='utf-8') as csvfile:
-        writer = csv.writer(csvfile, delimiter=",", lineterminator="\r")
+    with open(file_name, mode="w", encoding='utf-8') as f:
+        writer = csv.writer(f, delimiter=",", lineterminator="\r")
         writer.writerow(fields)  # заголовки
         for obj in dicts:
             if obj[2] == "1":

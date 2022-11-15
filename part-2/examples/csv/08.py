@@ -12,7 +12,7 @@ def get_data(file_name):
 file_name = "./csv/students.csv"
 titles, rows = get_data(file_name)
 
-srtd = sorted(rows, key=lambda x: (x[4], x[1]))  # так не работает
+srtd = sorted(rows, key=lambda x: (x[4], x[1]))  # так работает почти
 # но нельзя выбрать направления сортировкок по отдельным столбцам
 for row in srtd:
     print(row[4].ljust(6), row[1])
