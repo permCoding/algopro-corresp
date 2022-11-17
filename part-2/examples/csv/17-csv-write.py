@@ -13,7 +13,7 @@ def write_to_file(file_name, dicts, fields):
         writer = csv.writer(f, delimiter=",", lineterminator="\r")
         writer.writerow(fields)  # заголовки
         for obj in dicts:
-            if obj[2] == "1":
+            if obj[2] == "1":  # фильтр по условию
                 writer.writerow(obj)
 
 
