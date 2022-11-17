@@ -1,6 +1,5 @@
 import csv
 from operator import attrgetter as ag
-from functools import cmp_to_key
 
 
 class Student():

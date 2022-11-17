@@ -1,5 +1,4 @@
 import csv
-from operator import itemgetter as ig
 from functools import cmp_to_key
 
 

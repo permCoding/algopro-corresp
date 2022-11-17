@@ -1,5 +1,6 @@
 import csv
 
+
 def get_data(file_name):
     results = []
     with open(file_name, encoding='utf-8') as f:
@@ -8,12 +9,14 @@ def get_data(file_name):
             results.append(row)
     return (results[0].keys(), results)
 
+
 def write_to_file(file_name, dicts, fields):
     with open(file_name, mode="w", encoding='utf-8') as f:
         writer = csv.DictWriter(f, delimiter=",", \
             lineterminator="\r", fieldnames=fields)
         writer.writeheader()
         writer.writerows(dicts)
+
 
 file_name = "./csv/students.csv"
 fields, students = get_data(file_name)
