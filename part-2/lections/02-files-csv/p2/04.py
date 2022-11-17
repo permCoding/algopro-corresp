@@ -7,12 +7,12 @@ def get_lst(file_name):
 
 
 file_name = "./csv/students.csv"
-studs = get_lst(file_name)
-filtred = filter(lambda x: x['gender']=='1', studs)
-for row in filtred:
-    print(row)
+studs = get_lst(file_name)  # получить список объектов
+filtred = filter(lambda x: x['gender']=='1', studs)  # отфильтровать по значению
+sorted = sorted(filtred, key=lambda x: x["name"])  # сортировать по полю
+for row in sorted:
+    print(row['name'])
 
 '''
-вывести только имена мужиков
-в алф порядке
+вывести только имена мужиков в алф порядке
 '''
