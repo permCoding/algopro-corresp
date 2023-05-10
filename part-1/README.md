@@ -11,9 +11,13 @@
 5) [Notepad++](https://notepad-plus-plus.org/downloads/)  
 6) [Google Colab for Python](https://colab.research.google.com/)  
 7) [repl](https://replit.com/~)  
-8) [PyCharm](https://www.jetbrains.com/pycharm/)  
+8) [Wing Python IDE](https://wingware.com/)  
+9) [PyCharm](https://www.jetbrains.com/pycharm/)  
+10) Редактор блок-схем алгоритмов - diagrams.net, [пример на Google Drive](https://drive.google.com/file/d/1yJraUps4XK-cmun4tZh4cMdwKJud1vju/view?usp=sharing)  
 
----
+---  
+
+## Сессия 1  
 
 [Блокнот ТЕМА 01 - Синтаксис языка](https://colab.research.google.com/drive/1Lt59yQHjRePtOk7ZTOgK4tsLhvOJQvzc?usp=sharing)  
 > Обсуждаем языки программирования, сравниваем js, cs, py  
@@ -37,22 +41,42 @@
 > блок-схемы алгоритмов  
 > системы счисления, алгоритмы перевода  
 
-[Блокнот ТЕМА 05 - Коллекции](https://colab.research.google.com/drive/1oBS1neHRZUzgXjRPLneUXmDB3zdjRpMq?usp=sharing)  
-> list, tuple, set, dict  
-> array в Питоне  
+**Учебные пособия**  
+- algo.pdf  
+- PythonJunior.pdf  
+
+### Контрольные работы 
+
+Перейдите на этот курс:  
+[Курс Алгоритмизация и программирование](https://stepik.org/course/64867/)  
+- решите там задачи из трёх тем:  
+> Входной контроль  
+> Циклы  
+> Массивы  
+- там автоматичеси проверяется, ваши программы и результаты сохраняются  
+- преподавателю высылать не нужно, только решайте под своими Фамилиями  
 
 ---
 
 
-Следующая сессия  
-ТЕМА - Файлы  
+## Сессия 2  
+
+[Блокнот ТЕМА 05 - Коллекции](https://colab.research.google.com/drive/1oBS1neHRZUzgXjRPLneUXmDB3zdjRpMq?usp=sharing)  
+> list, tuple, set, dict  
+> array в Питоне  
+
+**ТЕМА - Файлы**  
 
 Текстовые - txt  
 Структурированные - csv  
 Иерархические - json, xml  
 
 [Видео-запись Лекции](https://bbb6.psaa.ru/playback/presentation/2.3/5923e2ed02a74e7b4d531d5d9ea23446bfaca0d7-1636360681859)  
-[Учебное пособие "Текстовые файлы" в pdf формате и задания к Лабораторной работе по этой теме]()  
+
+**Учебные пособия**  
+- Python_files.pdf  
+- json-ru.pdf  
+В учебном пособии "Текстовые файлы" задания к Лабораторной работе по этой теме  
 
 > как прочитать и как записать файл  
 > сортировка (по одному, по нескольким параметрам)  
