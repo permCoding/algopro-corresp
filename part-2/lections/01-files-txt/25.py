@@ -16,5 +16,5 @@ def list_to_file(filename, lst):
             f.write(f'{elm[0]},{elm[1]},{elm[2]}\n')
 
 
-lst = get_rnd_records()
+lst = get_rnd_records(100)
 list_to_file('./txt/w01.txt', lst)
