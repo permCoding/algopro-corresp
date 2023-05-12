@@ -13,5 +13,7 @@ abiturs = get_records('./txt/abiturs.csv')
 filtred = [ab for ab in abiturs if ab[2]>=min_rating]
 ab_sorted = sorted(filtred, key=lambda x: x[2], reverse=True)
 
-for ab in ab_sorted:
-    print(*ab)
+with open('results.csv', 'w', encoding='utf8') as f:
+    f.write('id,name,rat\n')
+    for ab in ab_sorted:
+        f.write(f'{ab[0]},{ab[1]},{ab[2]}\n')
