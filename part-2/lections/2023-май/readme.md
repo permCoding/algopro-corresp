@@ -22,3 +22,8 @@ https://premierliga.ru/tournament-table
 или любой на ваше усмотрение  
 
 ---  
+
+сохранить в формате json  
+в файл records.json  
+
+---  
