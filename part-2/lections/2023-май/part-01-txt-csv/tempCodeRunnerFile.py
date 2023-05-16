@@ -1,0 +1,1 @@
+print(tds[0].text, tds[1].text, tds[8].text)
