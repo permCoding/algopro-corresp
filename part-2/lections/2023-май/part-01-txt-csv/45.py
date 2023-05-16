@@ -1,0 +1,44 @@
+import requests as req
+from bs4 import BeautifulSoup as bs  # pip install bs4
+
+
+def get_html(url):
+    html = req.get(url)
+    html.encoding = 'utf8'
+    return html.text
+
+
+def get_records(html):
+    soup = bs(html, 'html.parser')  # 'lxml'
+
+    trs = soup \
+        .find('table', class_='stat-table') \
+        .find('tbody') \
+        .find_all('tr')
+    
+    records = []
+    for tr in trs:
+        tds = tr.find_all('td')
+        record = [int(tds[0].text), tds[1].text, int(tds[6].text), int(tds[8].text)]
+        records.append( record )
+    
+    return records
+
+
+def to_csv(filename, records, sep=','):
+    f = open(filename, 'w', encoding='utf8')
+    f.write(f'id{sep}team{sep}ball{sep}\n')
+    for rec in records:
+        f.write(f'{rec[0]}{sep}{rec[1]}{sep}{rec[2]}\n')
+    f.close()
+
+
+url = 'https://www.sports.ru/rfpl/table/'
+
+html = get_html(url)
+records = get_records(html)
+
+# to_csv('./txt/results.csv', sorted(records, key=lambda x: x[2], reverse=True), ';')
+
+records.sort(key=lambda rec: rec[2], reverse=True)
+to_csv('./txt/results.csv', records, ';')
